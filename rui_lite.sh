@@ -25,7 +25,7 @@ sudo pip3 install -r oppo_ozip_decrypt/requirements.txt
 echo " Starting Patching ... "
 cd oppo_ozip_decrypt && ./ozipdecrypt.py ../*.ozip   # decrypt the ozip
 echo " Nuking oplus Bloats"
-cd out && rm -rf *my_preload* *my_region*  # These dynamic partitions are unnecesarry & all it has are oplus bloats
+cd ../out && rm -rf *my_preload* *my_region*  # These dynamic partitions are unnecesarry & all it has are oplus bloats
 echo " Creating flashable zip "
 zip -r9 realmeUI-Debloated-$DEVICE-$(env TZ='Asia/Kolkata' date +%Y%m%d).zip *
 echo "========================================"

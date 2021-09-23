@@ -32,7 +32,8 @@ echo "========================================"
 echo "    Patching Completed Sucessfully !    " 
 echo "========================================"
 
-echo " Do you want to upload patched ROM? [Y/n] "
+echo " Do you want to upload patched ROM? "
+read -p "y or n " -n 1 -r
 if [[ ! $REPLY =~ ^[Yy]$ ]]
 then
   echo " Thanks for using realmeUI Patcher"

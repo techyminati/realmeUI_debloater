@@ -32,3 +32,12 @@ echo "========================================"
 echo "    Patching Completed Sucessfully !    " 
 echo "========================================"
 
+echo " Do you want to upload patched ROM? [Y/n] "
+if [[ ! $REPLY =~ ^[Yy]$ ]]
+then
+  echo " Thanks for using realmeUI Patcher"
+else 
+  curl -sL https://git.io/file-transfer | sh && ./transfer wet *.zip  # Upload to we transfer
+fi
+
+echo "Thanks for using realmeUI Patcher"
